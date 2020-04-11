@@ -8,8 +8,13 @@ namespace WebSocketLib
 {
     public class Client : IDisposable
     {
-        private const int MessageBufferSize = 256;
+        private readonly int _messageBufferSize;
         private ClientWebSocket _cws;
+
+        public Client(int bufferSize)
+        {
+            _messageBufferSize = bufferSize;
+        }
 
         /// <summary>
         /// Connect to WebSocketServer.
@@ -26,7 +31,7 @@ namespace WebSocketLib
 
                 while (_cws.State == WebSocketState.Open)
                 {
-                    var buff = new ArraySegment<byte>(new byte[MessageBufferSize]);
+                    var buff = new ArraySegment<byte>(new byte[_messageBufferSize]);
                     var ret = await _cws.ReceiveAsync(buff, CancellationToken.None);
                     OnMessage?.Invoke(new UTF8Encoding().GetString(buff.Take(ret.Count).ToArray()));
                 }

@@ -5,4 +5,13 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <Authors>iedred7584, chemie2472</Authors>
+    <Company>iedred7584, chemie2472</Company>
+    <Description>WebSocket Server and Client Library.</Description>
+    <PackageReleaseNotes>https://github.com/iedred7584/WebSocketLib/releases</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/iedred7584/WebSocketLib</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
 </Project>

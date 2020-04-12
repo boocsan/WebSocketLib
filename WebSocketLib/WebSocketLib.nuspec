@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>WebSocketLib</id>
+    <version>1.0.0.0</version>
+    <title>WebSocketLib</title>
+    <authors>iedred7584, chemie2472</authors>
+    <owners>iedred7584, chemie2472</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/iedred7584/WebSocketLib</projectUrl>
+    <description>WebSocket Server and Client Library.</description>
+    <releaseNotes>Published Package.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>WebSocket</tags>
+  </metadata>
+</package>

@@ -22,7 +22,7 @@ namespace WebSocketLib.Example
 
             Task.Run(() =>
             {
-                var client = new Client();
+                var client = new Client(256);
                 client.OnMessage += message => Console.WriteLine($"[CLIENT {DateTime.Now:HH:mm:ss.ffffff}] Received. {message}");
                 client.Opened += () => Console.WriteLine($"[CLIENT {DateTime.Now:HH:mm:ss.ffffff}] Opened.");
                 client.Closed += () => Console.WriteLine($"[CLIENT {DateTime.Now:HH:mm:ss.ffffff}] Closed.");

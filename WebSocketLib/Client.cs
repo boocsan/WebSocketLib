@@ -44,6 +44,9 @@ namespace WebSocketLib
             }
         }
 
+        public void Send(string s) =>
+            _cws.SendAsync(new ArraySegment<byte>(Encoding.GetEncoding("UTF-8").GetBytes(s.ToArray())), WebSocketMessageType.Text, true, CancellationToken.None);
+
         /// <summary>
         /// Opened WebSocket Event.
         /// </summary>

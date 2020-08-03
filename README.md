@@ -24,3 +24,5 @@ dotnet add package WebSocketLib
 ## License
 
 This project is licensed under the [MIT License](https://github.com/iedred7584/WebSocketLib/blob/master/LICENSE)
+
+## Made by [iedred7584](https://github.com/iedred7584) / [chemie2472](https://github.com/chemie2472)
